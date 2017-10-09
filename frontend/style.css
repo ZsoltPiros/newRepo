@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.paper {
+  display: flex;
+  flex-direction: column;
+  background-color: #cecece;
+  min-width: 400px;
+  min-height: 500px;
+  align-items: center;
+}
+
+div.topcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+div.inputHolder {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+div.titleBox {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#todoInput {
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  outline: none;
+  border: 1px solid white;
+}
+
+#addButton {
+  width: 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: white;
+  height: 30px;
+  border-left: 1px solid black;
+  outline: none;
+}
+
+ul {
+  max-height: 315px;
+  list-style-type: none;
+  overflow: scroll;
+  position: static;
+}
+
+div.taskList {
+  max-height:315px;
+  overflow: scroll;
+}
+
+div.taskHolder {
+  width: 240px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px white solid;
+}
+
+div.buttons {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div.checkBox {
+  height: 25px;
+  width: 25px;
+  border-radius: 12.5px;
+  background-color: white;
+}
+
+div.garbageCan {
+  height: 25px;
+  width: 25px;
+  background-image: url("./pics/delete-512.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.checkedBox {
+  background-image: url("./pics/check.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+div.deleting, li.deleting {
+  transition: all 2s ease-out;
+}
